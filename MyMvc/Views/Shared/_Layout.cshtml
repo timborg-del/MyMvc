@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <img src="~/img/putte.jpg" />
+
+        <nav>
+
+            @Html.ActionLink("NumberGuessing", "NumberGuessing", "home")
+            @Html.ActionLink("CheckFever", "CheckFever", "Home")
+            @Html.ActionLink("About", "About", "Home")
+            @Html.ActionLink("Contacts", "Contacts", "Home")
+            @Html.ActionLink("Info", "Info", "Home")
+            @Html.ActionLink("Projects", "Projects", "Home")
+            @Html.ActionLink("Index", "Index", "Home")
+
+
+        </nav>
+    </header>
+    Very very nice
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        @DateTime.Now; <q>Tim Lindborg</q>
+    </footer>
+</body>
+</html>
