@@ -42,13 +42,13 @@ namespace MyMvc
             {
 
                 endpoints.MapControllerRoute(
-                    name: "mySpecialRule",
+                    name: "RuleForFeverCheck",
                     pattern: "CheckFever",
                     defaults: new { Controller = "Home", Action = "CheckFever"}
                     );               
                 
                 endpoints.MapControllerRoute(
-                    name: "mySpecialRule",
+                    name: "RuleForNumberGuessing",
                     pattern: "NumberGuessing",
                     defaults: new { Controller = "Home", Action = "NumberGuessing"}
                     );

@@ -52,7 +52,7 @@ namespace MyMvc.Controllers
         {
             int randomNumber = (int)HttpContext.Session.GetInt32("numberToGuess");
             string result = GuessedNumber.Numbers(Number, randomNumber);
-            ViewBag.NumberGuessing = result;
+            ViewBag.NumberGuessing = result ;
             return View(); 
         }
 

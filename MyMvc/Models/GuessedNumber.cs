@@ -7,19 +7,27 @@ namespace MyMvc.Models
 {
     public class GuessedNumber
     {
+        static readonly string higher = "To High";
+        static readonly string correct = "Good Jobb";
+        static readonly string toolow = "To Low";
         public static string Numbers(int Number, int randomNumber)
         {
 
-            string goodNumber = "Good Jobb";
-            string badNumber = "Wrong Number";
-            if (randomNumber == Number)
+            //string goodNumber = "Good Jobb";
+            //string badNumber = "Wrong Number";
+            if (randomNumber < Number)
             {
-                return goodNumber;
+                return higher;
             }
-            else
+            else if (randomNumber == Number)
             {
-                return badNumber;
+                return correct;
             }
+            else 
+            {
+                return toolow;
+            }
+       
         }
 
     }
